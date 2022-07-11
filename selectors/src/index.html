@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ua">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../dist/output.css" />
+		<title>CSS Селектори</title>
+	</head>
+	<body class="font-mono bg-slate-700 text-white p-6">
+		<header class="p-4 text-center">
+			<h1 class="text-4xl font-black tracking-wide">CSS Селектори</h1>
+		</header>
+		<main class="flex flex-col items-center gap-8">
+			<section class="bg-amber-700 p-6 shadow-lg">
+				<h3 class="text-2xl">Базові</h3>
+				<table class="border-separate border-spacing-2 table-fixed">
+					<thead>
+						<tr>
+							<th class="border border-slate-300 p-3">Назва</th>
+							<th class="border border-slate-300 p-3">CSS</th>
+							<th class="border border-slate-300 p-3">Опис</th>
+							<th class="border border-slate-300 p-3">Результат</th>
+							<th class="border border-slate-300 p-3">Приклад</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="border border-slate-300 p-2">
+								Універсальний <span class="text-sm text-zinc-200">селектор</span>
+							</td>
+							<td class="border border-slate-300 p-2 text-center">*</td>
+							<td class="border border-slate-300 p-2 text-sm text-zinc-200">
+								Вибирає всі елементи
+							</td>
+							<td class="border border-slate-300 p-2">
+								<div class="flex gap-2 justify-center">
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">a</div>
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">b</div>
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">c</div>
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">d</div>
+								</div>
+							</td>
+							<td class="border border-slate-300 p-2">Приклад</td>
+						</tr>
+						<tr>
+							<td class="border border-slate-300 p-2">
+								<span class="text-sm text-zinc-200">Cелектор</span> типу
+							</td>
+							<td class="border border-slate-300 p-2 text-center">button</td>
+							<td class="border border-slate-300 p-2 text-sm text-zinc-200">
+								Вибирає всі елементи конкретного типу
+							</td>
+							<td class="border border-slate-300 p-2">
+								<div class="flex gap-2 justify-center">
+									<div class="border rounded-md px-2 py-1">div</div>
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">
+										button
+									</div>
+									<div class="border rounded-md px-2 py-1">a</div>
+									<div class="border rounded-md px-2 py-1">span</div>
+								</div>
+							</td>
+							<td class="border border-slate-300 p-2">Приклад</td>
+						</tr>
+						<tr>
+							<td class="border border-slate-300 p-2">
+								<span class="text-sm text-zinc-200">Cелектор</span> класу
+							</td>
+							<td class="border border-slate-300 p-2 text-center">.button</td>
+							<td class="border border-slate-300 p-2 text-sm text-zinc-200">
+								Вибирає всі елементи з конкретним класом
+							</td>
+							<td class="border border-slate-300 p-2">
+								<div class="flex gap-2 justify-center">
+									<div class="border rounded-md px-2 py-1">.box</div>
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">
+										.button
+									</div>
+									<div class="border rounded-md px-2 py-1">.link</div>
+									<div class="border rounded-md px-2 py-1">.text</div>
+								</div>
+							</td>
+							<td class="border border-slate-300 p-2">Приклад</td>
+						</tr>
+						<tr>
+							<td class="border border-slate-300 p-2">
+								Унікальний <span class="text-sm text-zinc-200">селектор</span>
+							</td>
+							<td class="border border-slate-300 p-2 text-center">#button</td>
+							<td class="border border-slate-300 p-2 text-sm text-zinc-200">
+								Вибирає один унікальний елемент з конкретним айді
+							</td>
+							<td class="border border-slate-300 p-2">
+								<div class="flex gap-2 justify-center">
+									<div class="border rounded-md px-2 py-1">#box</div>
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">
+										#button
+									</div>
+									<div class="border rounded-md px-2 py-1">#link</div>
+									<div class="border rounded-md px-2 py-1">#text</div>
+								</div>
+							</td>
+							<td class="border border-slate-300 p-2">Приклад</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section class="bg-amber-700 p-6 shadow-lg w-4/5">
+				<h3 class="text-2xl">Комбінаторні</h3>
+				<table class="border-separate border-spacing-2 table-fixed">
+					<thead>
+						<tr>
+							<th class="border border-slate-300 p-3">Назва</th>
+							<th class="border border-slate-300 p-3">CSS</th>
+							<th class="border border-slate-300 p-3">Опис</th>
+							<th class="border border-slate-300 p-3">Результат</th>
+							<th class="border border-slate-300 p-3">Приклад</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="border border-slate-300 p-2">
+								Спадний <span class="text-sm text-zinc-200">селектор</span>
+							</td>
+							<td class="border border-slate-300 p-2 text-center">section a</td>
+							<td class="border border-slate-300 p-2 text-sm text-zinc-200">
+								Вибирає елементи конкретного типу(a), що є нащадками першого
+								елементу(section)
+							</td>
+							<td class="border border-slate-300 p-2">
+								<img
+									src="./assets/Descendant Selector.svg"
+									alt="Приклад спадного селектору"
+								/>
+							</td>
+							<td class="border border-slate-300 p-2">Приклад</td>
+						</tr>
+						<tr>
+							<td class="border border-slate-300 p-2">
+								Селектор
+								<span class="text-sm text-zinc-200">прямого нащадка</span>
+							</td>
+							<td class="border border-slate-300 p-2 text-center">section > a</td>
+							<td class="border border-slate-300 p-2 text-sm text-zinc-200">
+								Вибирає всі елементи, які є прямими нащадками першого елементу
+							</td>
+							<td class="border border-slate-300 p-2">
+								<img
+									src="./assets/Direct Child Selector.svg"
+									alt="Приклад селектору прямого нащадка"
+								/>
+							</td>
+							<td class="border border-slate-300 p-2">Приклад</td>
+						</tr>
+						<tr>
+							<td class="border border-slate-300 p-2">
+								General Sibling <span class="text-sm text-zinc-200">селектор</span>
+							</td>
+							<td class="border border-slate-300 p-2 text-center">button ~ a</td>
+							<td class="border border-slate-300 p-2 text-sm text-zinc-200">
+								Вибирає всі елементи, що знаходяться на одному рівні з першим
+								елементом і йдуть після нього
+							</td>
+							<td class="border border-slate-300 p-2">
+								<div class="flex gap-2 justify-center">
+									<div class="border rounded-md px-2 py-1">a</div>
+									<div class="border rounded-md px-2 py-1">button</div>
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">a</div>
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">a</div>
+								</div>
+							</td>
+							<td class="border border-slate-300 p-2">Приклад</td>
+						</tr>
+						<tr>
+							<td class="border border-slate-300 p-2">
+								Adjacent Sibling <span class="text-sm text-zinc-200">селектор</span>
+							</td>
+							<td class="border border-slate-300 p-2 text-center">button + a</td>
+							<td class="border border-slate-300 p-2 text-sm text-zinc-200">
+								Вибирає елементи, що знаходиться на одному рівні з першим елементом
+								і йдуть одразу після нього
+							</td>
+							<td class="border border-slate-300 p-2">
+								<div class="flex gap-2 justify-center">
+									<div class="border rounded-md px-2 py-1">a</div>
+									<div class="border rounded-md px-2 py-1">button</div>
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">a</div>
+									<div class="border rounded-md px-2 py-1">a</div>
+								</div>
+							</td>
+							<td class="border border-slate-300 p-2">Приклад</td>
+						</tr>
+						<tr>
+							<td class="border border-slate-300 p-2">
+								<span class="text-sm text-zinc-200">Селектор</span> Або
+							</td>
+							<td class="border border-slate-300 p-2 text-center">button, a</td>
+							<td class="border border-slate-300 p-2 text-sm text-zinc-200">
+								Вибирає елементи, які відповідають будь-якому з селекторів в списку
+							</td>
+							<td class="border border-slate-300 p-2">
+								<div class="flex gap-2 justify-center">
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">
+										button
+									</div>
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">a</div>
+									<div class="border rounded-md px-2 py-1">div</div>
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">a</div>
+								</div>
+							</td>
+							<td class="border border-slate-300 p-2">Приклад</td>
+						</tr>
+						<tr>
+							<td class="border border-slate-300 p-2">
+								<span class="text-sm text-zinc-200">Селектор</span> І
+							</td>
+							<td class="border border-slate-300 p-2 text-center">section.box</td>
+							<td class="border border-slate-300 p-2 text-sm text-zinc-200">
+								Вибирає елементи, які відповідають всім селекторам зі списку
+							</td>
+							<td class="border border-slate-300 p-2">
+								<div class="flex gap-2 justify-center">
+									<div class="bg-cyan-500 border rounded-md px-2 py-1">
+										section.box
+									</div>
+									<div class="border rounded-md px-2 py-1">section</div>
+									<div class="border rounded-md px-2 py-1">div.box</div>
+									<div class="border rounded-md px-2 py-1">.box</div>
+								</div>
+							</td>
+							<td class="border border-slate-300 p-2">Приклад</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+	</body>
+</html>
